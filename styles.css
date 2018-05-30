@@ -1,17 +1,99 @@
 body {
 background-color: white;
 margin: 0 auto;
+font-family: 'Vollkorn', serif;
+font-size: 16px;
 }
 
-.container {
-  border: 2px solid pink;
-  margin: 0px;
+.justify-content-end {
+  margin-right: 10px;
 }
 
-.col-sm {
-  border: 3px solid blue;
+.nav-link {
+  color: #EF4F4E;
+  font-size: 14px;
+  padding: 10px;
 }
 
-#feck {
-  border: 2px solid orange;
+.justify-content-center {
+  display: none;
+}
+
+#logo {
+  width: 40%;
+  margin-top: 15vh;
+ }
+
+h1 {
+  font-size: 30px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.jumbotron-fluid {
+  padding-top: 5px;
+  border-radius: 0px;
+  height: 100vh;
+  background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(./assets/jumbotron-background.jpg);
+  background-size: cover;
+}
+
+
+#jumbotron-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 66%;
+  margin-top: 50px;
+}
+
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-link {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.btn {
+  border: 1px solid #EF4F4E;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #EF4F4E;
+  margin: 50px 0px 5px 0px;
+  width: 180px;
+  height: 44px;
+}
+
+.btn hover {
+  background-color: white;
+}
+
+.social-media-icon {
+  width: 28px;
+  height: 28px;
+  margin: 25px 10px 25px 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .justify-content-center {
+    display: flex;
+    text-align: center; }
+  .justify-content-end {
+    display: none;
+  }
+  #logo {
+    width: 80%;
+    margin-top: 7vh;
+  }
+  #jumbotron-content {
+    width: 95%;
+  }
+  .social-media-icon {
+    margin: 35px 10px 25px 10px;
+  }
 }
